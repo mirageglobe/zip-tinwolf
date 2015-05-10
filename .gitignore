@@ -1,0 +1,7 @@
+*.swp
+*.log
+
+mymap.txt
+mysettings.txt
+
+reference/

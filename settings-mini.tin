@@ -1,0 +1,5 @@
+#nop ----- read in default
+#read settings-core.tin
+
+#nop ----- graphics
+#split 14 2
