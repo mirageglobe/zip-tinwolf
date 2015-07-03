@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# ----- functions
+
+function checkapp {
+  command -v $1 >/dev/null 2>&1 || { echo >&2 "$1 not installed. OSX: use brew install $1. Aborting."; exit 1; }
+}
+
+function checkfile {
+  if [ ! -f $1 ]; then
+    echo "$1 not found. [abort]"
+    exit 1
+  else
+    echo "$1 found. [ok]"
+  fi
+}
+
+# ----- checking dependancies
+
+echo "--------------"
+echo " Tinwolf"
+echo "--------------"
+
+echo "checking dependancy apps..."
+checkapp tt++
+
+echo "checking dependancy files..."
+checkfile mysettings.txt
+checkfile settings-mini.tin
+
+# ----- adding tmp log environment files
+
+touch chats.log
+touch character.log
+touch minimap.log
+touch group.log
+touch quest.log
+
+
+# ----- adding user files
+
+# naming it as txt so it does not look scary
+touch mysettings.txt
+touch mymap.txt
+
+# ----- launch basic tintin
+
+tt++ settings-mini.tin

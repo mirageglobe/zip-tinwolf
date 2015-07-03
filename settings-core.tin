@@ -10,30 +10,30 @@
 #nop ----- some test scripts
 #nop http://tintin.sourceforge.net/mccp/
 
-#event {SESSION CONNECTED} 
-{ 
-  #map create 1000000; 
+#event {SESSION CONNECTED}
+{
+  #map create 1000000;
   #map read mymap.txt
-  #map flag vtmap on; 
-  #map flag static off; 
-  #map flag nofollow; 
-  #map goto 1; 
+  #map flag vtmap on;
+  #map flag static off;
+  #map flag nofollow;
+  #map goto 1;
   #showme loaded map from mymap.txt
-} 
+}
 
-#event {SESSION DISCONNECTED} 
-{ 
+#event {SESSION DISCONNECTED}
+{
   #showme saved map to mymap.txt
-  #map write mymap.txt 
-} 
+  #map write mymap.txt
+}
 
 #nop ----- keyboard mappings
 #nop numpad 8 2 6 4 7 1
-#macro {\eOx} {n} 
+#macro {\eOx} {n}
 #macro {\eOr} {s}
-#macro {\eOv} {e} 
+#macro {\eOv} {e}
 #macro {\eOt} {w}
-#macro {\eOw} {u} 
+#macro {\eOw} {u}
 #macro {\eOq} {d}
 
 #nop numpad 9 (scan)
@@ -49,13 +49,13 @@
 #macro {\eOp} {spellup}
 
 #nop numpad . (inventory)
-#macro {\eOn} {inventory} 
+#macro {\eOn} {inventory}
 
 #nop numpad / (attack)
 #macro {\eOo} {iattack}
 
 #nop numpad * (attack spell)
-#macro {\eOj} {iattackspell} 
+#macro {\eOj} {iattackspell}
 
 #nop numpad - (flee)
 #macro {\eOm} {flee}
