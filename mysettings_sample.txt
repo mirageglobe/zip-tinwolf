@@ -1,5 +1,0 @@
-#nop ----- closing default connection
-#nop end
-
-#nop ----- connection
-#session aardwolf aardwolf.org 4000;dracoturtur;edtvxeph
