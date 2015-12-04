@@ -1,0 +1,7 @@
+#nop ----- closing default connection
+#nop end
+
+#nop ----- connection
+
+#nop ----- change your <username> and <password> to your character
+#session aardwolf aardwolf.org 4000;dracoturtur;

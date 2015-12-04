@@ -25,8 +25,8 @@ echo "checking dependancy apps..."
 checkapp tt++
 
 echo "checking dependancy files..."
-checkfile mysettings.txt
-checkfile settings-mini.tin
+checkfile settings.txt
+checkfile config.tin
 
 # ----- adding tmp log environment files
 
@@ -40,9 +40,9 @@ touch viewquest.log
 # ----- adding user files
 
 # naming it as txt so it does not look scary
-touch mysettings.txt
-touch mymap.txt
+touch settings.txt
+touch map.txt
 
 # ----- launch basic tintin
 
-tt++ settings-mini.tin
+tt++ config.tin
