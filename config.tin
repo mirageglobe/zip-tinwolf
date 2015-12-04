@@ -5,7 +5,7 @@
 #session aardwolf aardwolf.org 4000
 
 #nop ----- read in default
-#read mysettings.txt
+#read settings.txt
 
 #nop ----- some test scripts
 #nop http://tintin.sourceforge.net/mccp/
@@ -27,7 +27,7 @@
   #map write map.txt
 }
 
-#nop ----- keyboard mappings
+#nop ----- keyboard for numpad mappings
 #nop numpad 8 2 6 4 7 1
 #macro {\eOx} {n}
 #macro {\eOr} {s}
@@ -35,6 +35,14 @@
 #macro {\eOt} {w}
 #macro {\eOw} {u}
 #macro {\eOq} {d}
+
+#nop ----- keyboard for macosx
+#macro {\e\e[A} {n}
+#macro {\e\e[B} {s}
+#macro {\e\e[C} {e}
+#macro {\e\e[D} {w}
+#macro {\e[1;10A} {u}
+#macro {\e[1;10B} {d}
 
 #nop numpad 9 (scan)
 #macro {\eOy} {scan}
@@ -67,11 +75,12 @@
 #substitute {chan ch=} {}
 
 #nop ----- alias
-#nop function {iquit} {#system ./quit.sh}
 
 #alias {iquit}
 {
-  #showme quitting
+  #showme quitting;
+  {quit}
+  #end
 }
 
 #alias {ishout} {gossip}
@@ -85,4 +94,5 @@
 #nop ----- graphics
 #showme split graphics
 #split 14 2
+
 
