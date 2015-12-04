@@ -17,9 +17,9 @@ function checkfile {
 
 # ----- checking dependancies
 
-echo "--------------"
-echo " Tinwolf"
-echo "--------------"
+echo "---------------"
+echo "    Tinwolf    "
+echo "---------------"
 
 echo "checking dependancy apps..."
 checkapp tt++
@@ -30,11 +30,11 @@ checkfile settings-mini.tin
 
 # ----- adding tmp log environment files
 
-touch chats.log
-touch character.log
-touch minimap.log
-touch group.log
-touch quest.log
+touch viewchats.log
+touch viewstats.log
+touch viewminimap.log
+touch viewgroup.log
+touch viewquest.log
 
 
 # ----- adding user files

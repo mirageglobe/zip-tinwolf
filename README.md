@@ -7,7 +7,7 @@ To Install / Run
 ---------------------------
 
 - download this repository and unzip
-- copy "mysettings_sample.txt" to "mysettings.txt"
+- copy "mysettingssample.txt" to "mysettings.txt"
 - update your username and password in the "mysettings.txt" file for autoloading
 - run "start-tinwolf.sh"
 
@@ -28,4 +28,5 @@ Goal / Features
 
 Reference
 ---------------------------
-http://tintinplusplus-unoffical-documentation.readthedocs.org/
+
+- http://tintinplusplus-unoffical-documentation.readthedocs.org/
