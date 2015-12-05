@@ -1,8 +1,8 @@
 *.swp
 *.log
 
-mymap.txt
-mysettings.txt
+map.txt
+settings.txt
 
 reference/
 ref/
