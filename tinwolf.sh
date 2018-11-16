@@ -43,5 +43,5 @@ touch viewquest.log
 
 # ----- launch basic tintin
 
-tt++ settings.txt
+tt++ conf-settings.cfg
 

@@ -1,7 +1,6 @@
 *.swp
 *.log
-
-items.txt
+*.txt
 
 reference/
 references/
