@@ -31,7 +31,8 @@ checkapp tt++
 
 printf "\\nchecking dependancy files..."
 checkfile map.txt
-checkfile config.txt
+checkfile conf-common.cfg
+checkfile conf-settings.cfg
 
 # ----- adding tmp log environment files
 
