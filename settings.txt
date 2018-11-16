@@ -1,22 +1,17 @@
+#nop ----- information
+#nop reference http://tintinplusplus-unoffical-documentation.readthedocs.org/en/latest/index.html
 
-#nop ----- Custom Aliases, Triggers and Macros -----
+#nop ----- setup
+#nop load all the configurations
+#read config.txt
 
-#nop ----- aliases
+#nop ----- graphics
+#showme split graphics
+#split 16 1
 
-#alias {ishout} {gossip}
+#nop ----- connection
+#session aardwolf aardwolf.org 4010
 
-#alias {iattackmelee} {kick}
-#alias {iattackmissle} {kick}
-#alias {iattackmagic} {kick}
-#alias {iheal} {quaff}
-#alias {ihealfriend} {cast heal}
-#alias {icombo} {iattack;iattackspell}
-
-#alias {ieat} {drink decanter}
-#alias {idrink} {ieat}
-
-#nop ----- triggers
-
-#nop ----- macros
-
+#nop ----- some test scripts
+#nop http://tintin.sourceforge.net/mccp/
 

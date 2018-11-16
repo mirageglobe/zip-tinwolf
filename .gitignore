@@ -1,8 +1,7 @@
 *.swp
 *.log
 
-map.txt
-settings.txt
+items.txt
 
 reference/
 references/

@@ -1,0 +1,174 @@
+#ALIAS {iarm}
+{
+	wield 1293538599;
+	second 1293538587
+}
+{5}
+
+#ALIAS {icombo}
+{
+	kick;
+	kick
+}
+{5}
+
+#ALIAS {idrink}
+{
+	ieat
+}
+{5}
+
+#ALIAS {ieat}
+{
+	get 1098965549 from 1212331247;
+	drink 1098965549;
+	drink 1098965549;
+	put 1098965549 in 1212331247
+}
+{5}
+
+#ALIAS {iheal}
+{
+	get seekers60heal from 1212331247;
+	quaff seekers60heal
+}
+{5}
+
+#ALIAS {ihealu}
+{
+	cast 26
+}
+{5}
+
+#ALIAS {ihome}
+{
+	get 1108863715 from 1212331247;
+	wear 1108863715;
+	enter;
+	d;
+	remove 1108863715;
+	put 1108863715 in 1212331247;
+	iarm
+}
+{5}
+
+#ALIAS {ilottery}
+{
+	recall;
+	d;
+	runto lottery;
+	buy ticket random
+}
+{5}
+
+#ALIAS {iopenall}
+{
+	open north;
+	open south;
+	open east;
+	open west
+}
+{5}
+
+#ALIAS {iquit}
+{
+	#write config.txt;
+	quit;
+	#end
+}
+{5}
+
+#ALIAS {ishout}
+{
+	gossip
+}
+{5}
+
+#ALIAS {istockup}
+{
+	recall;
+	d;
+	runto seekers;
+	e;
+	buy 10 12;
+	put all.seekers60heal in 1212331247
+}
+{5}
+
+#CONFIG           {256 COLORS}  {ON}
+#CONFIG           {AUTO TAB}  {5000}
+#CONFIG           {BUFFER SIZE}  {20000}
+#CONFIG           {CHARSET}  {ASCII}
+#CONFIG           {COLOR PATCH}  {OFF}
+#CONFIG           {COMMAND COLOR}  {<078>}
+#CONFIG           {COMMAND ECHO}  {ON}
+#CONFIG           {CONNECT RETRY}  {0}
+#CONFIG           {HISTORY SIZE}  {1000}
+#CONFIG           {LOG}  {RAW}
+#CONFIG           {PACKET PATCH}  {0.00}
+#CONFIG           {REPEAT CHAR}  {!}
+#CONFIG           {REPEAT ENTER}  {OFF}
+#CONFIG           {SCROLL LOCK}  {ON}
+#CONFIG           {SPEEDWALK}  {ON}
+#CONFIG           {TINTIN CHAR}  {#}
+#CONFIG           {VERBATIM}  {OFF}
+#CONFIG           {VERBATIM CHAR}  {\}
+#CONFIG           {VERBOSE}  {OFF}
+#CONFIG           {WORDWRAP}  {ON}
+#EVENT {SESSION CONNECTED}
+{
+	#map create 1000000;
+	#map read map.txt;
+	#map flag vtmap on;
+	#map flag static off;
+	#map flag nofollow;
+	#map AsciiGraphics on;
+	#map goto 1
+}
+
+#EVENT {SESSION DISCONNECTED}
+{
+	#map write map.txt
+}
+
+#MACRO {\e\e[A}
+{
+	n
+}
+
+#MACRO {\e\e[B}
+{
+	s
+}
+
+#MACRO {\e\e[C}
+{
+	e
+}
+
+#MACRO {\e\e[D}
+{
+	w
+}
+
+#MACRO {≤}
+{
+	d
+}
+
+#MACRO {≥}
+{
+	u
+}
+
+#PATHDIR          {d}  {u}  {32}
+#PATHDIR          {e}  {w}  {2}
+#PATHDIR          {n}  {s}  {1}
+#PATHDIR          {ne}  {sw}  {3}
+#PATHDIR          {nw}  {se}  {9}
+#PATHDIR          {s}  {n}  {4}
+#PATHDIR          {se}  {nw}  {6}
+#PATHDIR          {sw}  {ne}  {12}
+#PATHDIR          {u}  {d}  {16}
+#PATHDIR          {w}  {e}  {8}
+#SUBSTITUTE       {chan ch=}  {}  {5}

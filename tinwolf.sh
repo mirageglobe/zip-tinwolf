@@ -1,32 +1,37 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # ----- functions
 
-function checkapp {
-  command -v $1 >/dev/null 2>&1 || { echo >&2 "$1 not installed. OSX: use brew install $1. Aborting."; exit 1; }
+checkapp() {
+  if command -v "$1" > /dev/null 2>&1; then
+    printf "\\n software found"
+  else
+    printf "\\n app not installed. OSX: use brew install %s or LINUX: apt install %s. Aborting." "$1" "$1"
+    exit 1
+  fi
 }
 
-function checkfile {
-  if [ ! -f $1 ]; then
-    echo "$1 not found. [abort]"
+checkfile() {
+  if [ ! -f "$1" ]; then
+    printf "\\n%s not found. [abort]" "$1"
     exit 1
   else
-    echo "$1 found. [ok]"
+    printf "\\n%s found. [ok]" "$1"
   fi
 }
 
 # ----- checking dependancies
 
-echo "---------------"
-echo "    Tinwolf    "
-echo "---------------"
+printf "\\n---------------"
+printf "\\n    Tinwolf    "
+printf "\\n---------------"
 
-echo "checking dependancy apps..."
+printf "\\nchecking dependancy apps..."
 checkapp tt++
 
-echo "checking dependancy files..."
-checkfile settings.txt
-checkfile config.tin
+printf "\\nchecking dependancy files..."
+checkfile map.txt
+checkfile config.txt
 
 # ----- adding tmp log environment files
 
@@ -36,13 +41,7 @@ touch viewminimap.log
 touch viewgroup.log
 touch viewquest.log
 
-
-# ----- adding user files
-
-# naming it as txt so it does not look scary
-touch settings.txt
-touch map.txt
-
 # ----- launch basic tintin
 
-tt++ config.tin
+tt++ settings.txt
+

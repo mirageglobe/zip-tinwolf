@@ -1,32 +1,49 @@
+# tinwolf #
 
-Tinwolf
-================================
-An Tintin++ based app for Aardwolf.
+- author/site : Jimmy MG Lim (mirageglobe@gmail.com) / www.mirageglobe.com
+- source : https://github.com/mirageglobe/tinwolf
 
-To Install / Run
----------------------------
-
-- download this repository and unzip
-- copy "mysettingssample.txt" to "mysettings.txt"
-- update your username and password in the "mysettings.txt" file for autoloading
-- run "start-tinwolf.sh"
-
-To Update
----------------------------
-
-- backup your tinwolf folder (either duplicate and rename or simply zip up the folder)
-- download the newer version
-- over write the files and folders from the new download to the current tinwolf
-
-Goal / Features
----------------------------
-
-- to be a portable, cross platform mud client for aardwolf [Goal]
+An Tintin++ based app for Aardwolf with the follow key goals
+- to be a portable, cross platform mud client for aardwolf
 - full text based user interface
 - flat, easy to understand files
 - based on mature mud engine (tintin++)
 
-Reference
----------------------------
+# To use #
+
+to use, clone this repository and run
+```
+$ sh tinwolf.sh
+```
+
+- to update, remember to backup your tinwolf folder (zip up the current folder) and just re-pull the git repository
+- settings.txt is where you should define your customisable settings such as triggers, aliases or macros
+- map.txt is where your map file is. You should backup this file where possible
+
+# Guidelines #
+
+a few points to note before submitting PR :
+
+- ensure this is tested on debian (as indicated in vagrantfile)
+
+# References #
 
 - http://tintinplusplus-unoffical-documentation.readthedocs.org/
+
+# License #
+
+Copyright 2015 Jimmy MG Lim (mirageglobe@gmail.com)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+License Breakdown: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)
