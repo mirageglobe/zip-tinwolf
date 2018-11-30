@@ -40,6 +40,12 @@
 }
 {5}
 
+#ALIAS {ihelp}
+{
+	#alias
+}
+{5}
+
 #ALIAS {ihome}
 {
 	get 1108863715 from 1212331247;
@@ -72,15 +78,21 @@
 
 #ALIAS {iquit}
 {
-	#write config.txt;
+	#write conf-all-backup.tin;
 	quit;
 	#end
 }
 {5}
 
-#ALIAS {ishout}
+#ALIAS {isay}
 {
 	gossip
+}
+{5}
+
+#ALIAS {isayclan}
+{
+	ct
 }
 {5}
 

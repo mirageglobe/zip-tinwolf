@@ -31,8 +31,8 @@ checkapp tt++
 
 printf "\\nchecking dependancy files..."
 checkfile map.txt
-checkfile conf-common.cfg
-checkfile conf-settings.cfg
+checkfile conf-common.tin
+checkfile conf-settings.tin
 
 # ----- adding tmp log environment files
 
@@ -44,5 +44,5 @@ touch viewquest.log
 
 # ----- launch basic tintin
 
-tt++ conf-settings.cfg
+tt++ conf-settings.tin
 

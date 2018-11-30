@@ -3,7 +3,7 @@
 
 #nop ----- setup
 #nop load all the configurations
-#read conf-common.cfg
+#read conf-common.tin
 
 #nop ----- graphics
 #showme split graphics
