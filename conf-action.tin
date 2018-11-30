@@ -1,0 +1,109 @@
+#ALIAS {iarm}
+{
+  wield 1293538599;
+  second 1293538587
+}
+{5}
+
+#ALIAS {icombo}
+{
+  kick;
+  kick
+}
+{5}
+
+#ALIAS {idrink}
+{
+  ieat
+}
+{5}
+
+#ALIAS {ieat}
+{
+  get 1098965549 from 1212331247;
+  drink 1098965549;
+  drink 1098965549;
+  put 1098965549 in 1212331247
+}
+{5}
+
+#ALIAS {iheal}
+{
+  get seekers60heal from 1212331247;
+  quaff seekers60heal
+}
+{5}
+
+#ALIAS {ihealu}
+{
+  cast 26
+}
+{5}
+
+#ALIAS {ihelp}
+{
+  #alias
+}
+{5}
+
+#ALIAS {ihome}
+{
+  get 1108863715 from 1212331247;
+  wear 1108863715;
+  enter;
+  d;
+  remove 1108863715;
+  put 1108863715 in 1212331247;
+  iarm
+}
+{5}
+
+#ALIAS {ilottery}
+{
+  recall;
+  d;
+  runto lottery;
+  buy ticket random
+}
+{5}
+
+#ALIAS {iopenall}
+{
+  open north;
+  open south;
+  open east;
+  open west
+}
+{5}
+
+#ALIAS {iquit}
+{
+#write conf-all-backup.tin;
+  quit;
+#end
+}
+{5}
+
+#ALIAS {isay}
+{
+  gossip
+}
+{5}
+
+#ALIAS {isayclan}
+{
+  ct
+}
+{5}
+
+#ALIAS {istockup}
+{
+  recall;
+  d;
+  runto seekers;
+  e;
+  buy 10 12;
+  put all.seekers60heal in 1212331247
+}
+{5}
+

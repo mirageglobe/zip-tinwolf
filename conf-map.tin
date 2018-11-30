@@ -1,0 +1,16 @@
+#EVENT {SESSION CONNECTED}
+{
+  #map create 1000000;
+  #map read map.txt;
+  #map flag vtmap on;
+  #map flag static off;
+  #map flag nofollow;
+  #map AsciiGraphics on;
+  #map goto 1
+}
+
+#EVENT {SESSION DISCONNECTED}
+{
+  #map write map.txt
+}
+

@@ -3,7 +3,10 @@
 
 #nop ----- setup
 #nop load all the configurations
+#read conf-action.tin
 #read conf-common.tin
+#read conf-map.tin
+#read conf-navigation.tin
 
 #nop ----- graphics
 #showme split graphics
