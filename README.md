@@ -38,6 +38,10 @@ a few points to note before submitting PR :
 # References #
 
 - http://tintinplusplus-unoffical-documentation.readthedocs.org/
+- https://github.com/theixle/aardwolf-tintin
+- http://www.aardwolf.com/wiki/index.php/Clients/GMCP
+- https://tintin.sourceforge.io/news.php
+- https://www.utf8icons.com/character/9814/white-chess-rook
 
 # License #
 
