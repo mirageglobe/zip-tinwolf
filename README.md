@@ -26,6 +26,15 @@ a few points to note before submitting PR :
 
 - ensure this is tested on debian (as indicated in vagrantfile)
 
+# Roadmap #
+
+- add scrollup = #buffer {up}
+- add scrollhome = #buffer {end}
+- add imappersave = #map write map.txt
+- add imappernomap = #map leave
+- add imappermap = #map start
+- add imapperundo = #map undo
+
 # References #
 
 - http://tintinplusplus-unoffical-documentation.readthedocs.org/

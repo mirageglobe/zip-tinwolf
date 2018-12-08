@@ -4,7 +4,7 @@
   #map read map.txt;
   #map flag vtmap on;
   #map flag static off;
-  #map flag nofollow;
+  #map flag nofollow on;
   #map AsciiGraphics on;
   #map goto 1
 }

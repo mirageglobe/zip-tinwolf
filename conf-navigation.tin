@@ -38,4 +38,12 @@
 #PATHDIR          {sw}  {ne}  {12}
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {w}  {e}  {8}
-#SUBSTITUTE       {chan ch=}  {}  {5}
+
+#SUBSTITUTE       {\{chan ch=auction\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=barter\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=clantalk\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=gclan\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=market\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=wangrp\}}  {♖  }  {30}
+
+
