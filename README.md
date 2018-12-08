@@ -4,7 +4,7 @@
 - source : https://github.com/mirageglobe/tinwolf
 
 An Tintin++ based app for Aardwolf with the follow key goals
-- to be a portable, cross platform mud client for aardwolf
+- to be a portable, cross platform mud client for aardwolf (macosx, nix, android, windowspowershell)
 - full text based user interface
 - flat, easy to understand files
 - based on mature mud engine (tintin++)
@@ -17,19 +17,20 @@ $ sh tinwolf.sh
 ```
 
 - to update, remember to backup your tinwolf folder (zip up the current folder) and just re-pull the git repository
-- settings.txt is where you should define your customisable settings such as triggers, aliases or macros
+- settings.txt is where you should define your customisable settings such as triggers or aliases
 - map.txt is where your map file is. You should backup this file where possible
 
 # Guidelines #
 
 a few points to note before submitting PR :
 
-- ensure this is tested on debian (as indicated in vagrantfile)
+- ensure this is tested on debian
+- ensure this is tested on mac
 
 # Roadmap #
 
-- add scrollup = #buffer {up}
-- add scrollhome = #buffer {end}
+- add iscrollup = #buffer {up}
+- add iscrollhome = #buffer {end}
 - add imappersave = #map write map.txt
 - add imappernomap = #map leave
 - add imappermap = #map start

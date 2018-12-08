@@ -190,3 +190,4 @@
 #SUBSTITUTE       {\{chan ch=gossip\}}  {♖  }  {30}
 #SUBSTITUTE       {\{chan ch=market\}}  {♖  }  {30}
 #SUBSTITUTE       {\{chan ch=wangrp\}}  {♖  }  {30}
+#VARIABLE         {IAC}  {�}
