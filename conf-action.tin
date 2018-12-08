@@ -1,24 +1,24 @@
-#ALIAS {iarm}
+#alias {iarm}
 {
   wield 1293538599;
   second 1293538587
 }
 {5}
 
-#ALIAS {icombo}
+#alias {icombo}
 {
   kick;
   kick
 }
 {5}
 
-#ALIAS {idrink}
+#alias {idrink}
 {
   ieat
 }
 {5}
 
-#ALIAS {ieat}
+#alias {ieat}
 {
   get 1098965549 from 1212331247;
   drink 1098965549;
@@ -27,26 +27,26 @@
 }
 {5}
 
-#ALIAS {iheal}
+#alias {iheal}
 {
   get seekers60heal from 1212331247;
   quaff seekers60heal
 }
 {5}
 
-#ALIAS {ihealu}
+#alias {ihealu}
 {
   cast 26
 }
 {5}
 
-#ALIAS {ihelp}
+#alias {ihelp}
 {
   #alias
 }
 {5}
 
-#ALIAS {ihome}
+#alias {ihome}
 {
   get 1108863715 from 1212331247;
   wear 1108863715;
@@ -58,7 +58,7 @@
 }
 {5}
 
-#ALIAS {ilottery}
+#alias {ilottery}
 {
   recall;
   d;
@@ -67,7 +67,7 @@
 }
 {5}
 
-#ALIAS {iopenall}
+#alias {iopenall}
 {
   open north;
   open south;
@@ -76,27 +76,27 @@
 }
 {5}
 
-#ALIAS {iquit}
+#alias {iquit}
 {
-#write conf-all-backup.tin;
+  #write conf-all-backup.tin;
   quit;
-#end
+  #end
 }
 {5}
 
-#ALIAS {isay}
+#alias {isay}
 {
   gossip
 }
 {5}
 
-#ALIAS {isayclan}
+#alias {isayclan}
 {
   ct
 }
 {5}
 
-#ALIAS {istockup}
+#alias {istockup}
 {
   recall;
   d;

@@ -30,6 +30,7 @@ printf "\\nchecking dependancy apps..."
 checkapp tt++
 
 printf "\\nchecking dependancy files..."
+touch map.txt
 checkfile map.txt
 checkfile conf-common.tin
 checkfile conf-settings.tin

@@ -133,7 +133,7 @@
 	#map read map.txt;
 	#map flag vtmap on;
 	#map flag static off;
-	#map flag nofollow;
+	#map flag nofollow on;
 	#map AsciiGraphics on;
 	#map goto 1
 }
@@ -183,4 +183,10 @@
 #PATHDIR          {sw}  {ne}  {12}
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {w}  {e}  {8}
-#SUBSTITUTE       {\{chan ch=auction\}}  {♖  }  {5}
+#SUBSTITUTE       {\{chan ch=auction\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=barter\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=clantalk\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=gclan\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=gossip\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=market\}}  {♖  }  {30}
+#SUBSTITUTE       {\{chan ch=wangrp\}}  {♖  }  {30}

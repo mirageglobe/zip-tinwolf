@@ -1,49 +1,41 @@
-#MACRO {\e\e[A}
+#macro {\e\e[A}
 {
   n
 }
 
-#MACRO {\e\e[B}
+#macro {\e\e[B}
 {
   s
 }
 
-#MACRO {\e\e[C}
+#macro {\e\e[C}
 {
   e
 }
 
-#MACRO {\e\e[D}
+#macro {\e\e[D}
 {
   w
 }
 
-#MACRO {≤}
+#macro {≤}
 {
   d
 }
 
-#MACRO {≥}
+#macro {≥}
 {
   u
 }
 
-#PATHDIR          {d}  {u}  {32}
-#PATHDIR          {e}  {w}  {2}
-#PATHDIR          {n}  {s}  {1}
-#PATHDIR          {ne}  {sw}  {3}
-#PATHDIR          {nw}  {se}  {9}
-#PATHDIR          {s}  {n}  {4}
-#PATHDIR          {se}  {nw}  {6}
-#PATHDIR          {sw}  {ne}  {12}
-#PATHDIR          {u}  {d}  {16}
-#PATHDIR          {w}  {e}  {8}
-
-#SUBSTITUTE       {\{chan ch=auction\}}  {♖  }  {30}
-#SUBSTITUTE       {\{chan ch=barter\}}  {♖  }  {30}
-#SUBSTITUTE       {\{chan ch=clantalk\}}  {♖  }  {30}
-#SUBSTITUTE       {\{chan ch=gclan\}}  {♖  }  {30}
-#SUBSTITUTE       {\{chan ch=market\}}  {♖  }  {30}
-#SUBSTITUTE       {\{chan ch=wangrp\}}  {♖  }  {30}
-
+#pathdir          {d}  {u}  {32}
+#pathdir          {e}  {w}  {2}
+#pathdir          {n}  {s}  {1}
+#pathdir          {ne}  {sw}  {3}
+#pathdir          {nw}  {se}  {9}
+#pathdir          {s}  {n}  {4}
+#pathdir          {se}  {nw}  {6}
+#pathdir          {sw}  {ne}  {12}
+#pathdir          {u}  {d}  {16}
+#pathdir          {w}  {e}  {8}
 
