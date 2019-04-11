@@ -32,9 +32,9 @@ a few points to note before submitting PR :
 - add iscrollup = #buffer {up}
 - add iscrollhome = #buffer {end}
 - add imappersave = #map write map.txt
-- add imappernomap = #map leave
-- add imappermap = #map start
-- add imapperundo = #map undo
+- add imapperstart = #map start
+- add imapperstop = #map leave
+- add imapperundo = #map read
 
 # References #
 
