@@ -33,17 +33,14 @@ printf "\\nchecking dependancy files..."
 touch map.txt
 checkfile map.txt
 checkfile conf-common.tin
-checkfile conf-settings.tin
 
 # ----- adding tmp log environment files
 
 touch viewchats.log
 touch viewstats.log
 touch viewminimap.log
-touch viewgroup.log
-touch viewquest.log
 
 # ----- launch basic tintin
 
-tt++ conf-settings.tin
+tt++ conf-common.tin
 

@@ -1,3 +1,14 @@
+
+#nop ----------------------------------------
+#nop references
+#nop ----------------------------------------
+#nop documentation      http://tintinplusplus-unoffical-documentation.readthedocs.org/en/latest/index.html
+#nop test scripts       http://tintin.sourceforge.net/mccp/
+
+#nop ----------------------------------------
+#nop common settings
+#nop ----------------------------------------
+
 #config           {256 COLORS}  {ON}
 #config           {AUTO TAB}  {5000}
 #config           {BUFFER SIZE}  {20000}
@@ -28,3 +39,117 @@
 #substitute       {\{chan ch=market\}}  {♖  }  {30}
 #substitute       {\{chan ch=wangrp\}}  {♖  }  {30}
 #substitute       {\{chan ch=question\}}  {♖  }  {30}
+
+#nop ----------------------------------------
+#nop mapper settings
+#nop ----------------------------------------
+
+#class {gmcp} {kill}
+#class {gmcp} {open}
+
+#format IAC  %a 255
+#format DONT %a 254
+#format DO   %a 253
+#format WONT %a 252
+#format WILL %a 251
+#format SB   %a 250
+#format SE   %a 240
+#format GMCP %a 201
+
+#alias {debug {on|off}}
+{
+  #if {"%1" == "on"} {
+    #variable debug 1
+  };
+  #else {
+    #variable debug 0
+  };
+  #nop;
+}
+{5}
+
+
+#event {PROGRAM START}
+{
+  #variable CLIENT_NAME %0;
+  #variable CLIENT_VERSION %1;
+}
+
+#event {SESSION CONNECTED}
+{
+  #nop when logging in
+  #map create 1000000
+  #map read map.txt
+  #map flag vtmap on
+  #map flag static off
+  #map flag nofollow on
+  #map AsciiGraphics on
+  #map goto 1
+}
+
+#event {SESSION DISCONNECTED}
+{
+  #nop when quitting
+}
+
+
+#nop ----------------------------------------
+#nop key controls settings
+#nop ----------------------------------------
+
+#macro {\e\e[A}
+{
+  n
+}
+
+#macro {\e\e[B}
+{
+  s
+}
+
+#macro {\e\e[C}
+{
+  e
+}
+
+#macro {\e\e[D}
+{
+  w
+}
+
+#macro {≤}
+{
+  d
+}
+
+#macro {≥}
+{
+  u
+}
+
+#pathdir          {d}  {u}  {32}
+#pathdir          {e}  {w}  {2}
+#pathdir          {n}  {s}  {1}
+#pathdir          {ne}  {sw}  {3}
+#pathdir          {nw}  {se}  {9}
+#pathdir          {s}  {n}  {4}
+#pathdir          {se}  {nw}  {6}
+#pathdir          {sw}  {ne}  {12}
+#pathdir          {u}  {d}  {16}
+#pathdir          {w}  {e}  {8}
+
+#nop ----------------------------------------
+#nop start settings
+#nop ----------------------------------------
+
+#class {gmcp} {close}
+
+#nop ----- setup
+#read conf-aliases.tin
+
+#nop ----- graphics
+#showme split graphics
+#split 16 1
+
+#nop ----- connection
+#session aardwolf aardwolf.org 4010
