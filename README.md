@@ -1,6 +1,6 @@
 # tinwolf #
 
-- author/site : Jimmy MG Lim (mirageglobe@gmail.com) / www.mirageglobe.com
+- maintainer : Jimmy MG Lim (mirageglobe@gmail.com) / www.mirageglobe.com
 - source : https://github.com/mirageglobe/tinwolf
 
 An Tintin++ based app for Aardwolf with the follow key goals
