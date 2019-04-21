@@ -107,19 +107,22 @@
 }
 {5}
 
-#CONFIG           {256 COLORS}  {ON}
 #CONFIG           {AUTO TAB}  {5000}
 #CONFIG           {BUFFER SIZE}  {20000}
 #CONFIG           {CHARSET}  {UTF-8}
+#CONFIG           {COLOR MODE}  {256}
 #CONFIG           {COLOR PATCH}  {OFF}
 #CONFIG           {COMMAND COLOR}  {<078>}
 #CONFIG           {COMMAND ECHO}  {ON}
 #CONFIG           {CONNECT RETRY}  {0}
 #CONFIG           {HISTORY SIZE}  {1000}
 #CONFIG           {LOG}  {RAW}
+#CONFIG           {MOUSE TRACKING}  {OFF}
 #CONFIG           {PACKET PATCH}  {0.00}
+#CONFIG           {RANDOM SEED}  {AUTO}
 #CONFIG           {REPEAT CHAR}  {!}
 #CONFIG           {REPEAT ENTER}  {OFF}
+#CONFIG           {SCREEN READER}  {OFF}
 #CONFIG           {SCROLL LOCK}  {ON}
 #CONFIG           {SPEEDWALK}  {ON}
 #CONFIG           {TINTIN CHAR}  {#}
@@ -127,36 +130,6 @@
 #CONFIG           {VERBATIM CHAR}  {\}
 #CONFIG           {VERBOSE}  {OFF}
 #CONFIG           {WORDWRAP}  {ON}
-#MACRO {\e\e[A}
-{
-	n
-}
-
-#MACRO {\e\e[B}
-{
-	s
-}
-
-#MACRO {\e\e[C}
-{
-	e
-}
-
-#MACRO {\e\e[D}
-{
-	w
-}
-
-#MACRO {≤}
-{
-	d
-}
-
-#MACRO {≥}
-{
-	u
-}
-
 #PATHDIR          {d}  {u}  {32}
 #PATHDIR          {e}  {w}  {2}
 #PATHDIR          {n}  {s}  {1}

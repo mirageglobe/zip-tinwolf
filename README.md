@@ -17,14 +17,14 @@ $ sh tinwolf.sh
 ```
 
 - to update, remember to backup your tinwolf folder (zip up the current folder) and just re-pull the git repository
-- settings.txt is where you should define your customisable settings such as triggers or aliases
-- map.txt is where your map file is. You should backup this file where possible
+- local-settings.txt is where you should define your customisable settings such as triggers or aliases
+- local-map.txt is where your map file is. You should backup this file where possible
 
 # Guidelines #
 
 a few points to note before submitting PR :
 
-- ensure this is tested on debian
+- ensure this is tested on debian/ubuntu
 - ensure this is tested on mac
 
 # Roadmap #

@@ -2,4 +2,7 @@
 *.log
 *.txt
 
+my-aliases.tin
+my-map.tin
+
 references/
