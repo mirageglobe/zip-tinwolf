@@ -12,18 +12,19 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.url="https://github/mirageglobe/tinwolf"
 
 ENV TERM=xterm
-
-RUN npm install -g testcafe
+ENV DEPS=apt-utils
+ENV APPS=xvfb \
+      xorg \
+      chromium \
+      fluxbox \
+      ttf-freefont
 
 # pre update requirements
-RUN apt-get update && \
-  apt-get install -y --no-install-recommends \
-  apt-utils
-RUN apt-get install -y \
-  xvfb xorg chromium fluxbox ttf-freefont
+RUN apt-get update && apt-get install -y --no-install-recommends $DEPS
+RUN apt-get install -y $APPS
 
 WORKDIR /opt
-EXPOSE 1337 1338
+EXPOSE 8080
 
 # default init
 COPY ./docker-entrypoint.sh /usr/local/bin/
