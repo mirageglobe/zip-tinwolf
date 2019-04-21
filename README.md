@@ -11,9 +11,19 @@ An Tintin++ based app for Aardwolf with the follow key goals
 
 # To use #
 
-to use, clone this repository and run
+to use, clone this repository
 ```
-$ sh tinwolf.sh
+$ git clone https://github.com/mirageglobe/tinwolf.git
+```
+
+to run tinwolf, use make
+```
+$ make run
+```
+
+to see tinwolf options, use make
+```
+$ make
 ```
 
 - to update, remember to backup your tinwolf folder (zip up the current folder) and just re-pull the git repository
