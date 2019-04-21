@@ -36,9 +36,8 @@ checkfile conf-common.tin
 
 # ----- adding tmp log environment files
 
-touch viewchats.log
-touch viewstats.log
-touch viewminimap.log
+touch viewchats.log           # chat log
+touch viewstats.log           # stats and map in one long page
 
 # ----- launch basic tintin
 
