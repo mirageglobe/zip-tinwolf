@@ -32,14 +32,14 @@ checkapp tt++
 printf "\\nchecking dependancy files..."
 touch map.txt
 checkfile map.txt
-checkfile conf-common.tin
+checkfile common.conf
 
 # ----- adding tmp log environment files
 
-touch viewchats.log           # chat log
-touch viewstats.log           # stats and map in one long page
+touch log-chats.txt           # chat log
+touch log-stats.txt           # stats and map in one long page
 
 # ----- launch basic tintin
 
-tt++ conf-common.tin
+tt++ common.conf
 
