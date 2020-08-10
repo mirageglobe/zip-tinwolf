@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # ----- functions
 
@@ -20,24 +20,24 @@ checkfile() {
   fi
 }
 
-# ----- checking dependancies
+# ----- checking dependencies
 
 printf "\\n---------------"
 printf "\\n    Tinwolf    "
 printf "\\n---------------"
 
-printf "\\nchecking dependancy apps..."
+printf "\\nchecking dependency apps..."
 checkapp tt++
 
-printf "\\nchecking dependancy files..."
-touch map.txt
-checkfile map.txt
+printf "\\nchecking dependency files..."
+# touch map.txt
 checkfile common.conf
+# checkfile map.txt
 
 # ----- adding tmp log environment files
 
-touch log-chats.txt           # chat log
-touch log-stats.txt           # stats and map in one long page
+# touch log-chats.txt           # chat log
+# touch log-stats.txt           # stats and map in one long page
 
 # ----- launch basic tintin
 
